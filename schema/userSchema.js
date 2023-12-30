@@ -26,7 +26,7 @@ const userSchema = mongoose.Schema({
     timeManagment: {
         type: String,
         enum: ['free', 'busy'],
-        default: 'free'
+         //default: 'free'
     },
     timeStatus: {
         type: String

@@ -10,6 +10,7 @@ const router = express.Router()
 router.post('/', async (req, res) => {
     try {
       const userInformation = User(req.body); // Assuming User is a model
+      console.log(req.body);
       const newUser = await userInformation.save();
       res.status(201).json({ user:newUser });
     } catch (error) {
